@@ -1,0 +1,71 @@
+.bg-red {
+    background-color: #E67373;
+}
+
+.bg-orange {
+    background-color: #E6A773;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-green {
+    background-color: #5cb85c;
+}
+
+.bg-blue {
+    background-color: #458A8A;
+}
+
+.bg-purple {
+    background-color: #B85C90;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-grey {
+    background-color: Gainsboro;
+}
+
+.text-red {
+    color: #E67373;
+}
+
+.text-orange {
+    color: #E6A773;
+}
+
+.text-yellow {
+    color: yellow;
+}
+
+.text-green {
+   color: #5cb85c;
+}
+
+.text-blue {
+    color: #458A8A;
+}
+
+.text-purple {
+    color: #B85C90;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-grey {
+    color: Gainsboro;
+}
+
+text-white {
+    color: white;
+}
