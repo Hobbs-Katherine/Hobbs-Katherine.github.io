@@ -6,7 +6,7 @@ function Pet(name, breed, petType, age) {
     this.age = age;
     this.info = function() { 
        return this.name + " is a "+ this.breed + " which is a type of " + this.petType + ". " + this.name + " is " + this.age + ".";
-    };
+    }
 };
 
 //Pet.prototype.info = function() { Text(this.name + " is a " + this.breed + " which is a type of " + this.petType ". " + this.name " is " this.age); };
@@ -17,9 +17,9 @@ function Dog(name, breed, petType, age, numLegs) {
     this.numLegs = numLegs;
     this.info = function() { 
        return this.name + " is a "+ this.breed + " which is a type of " + this.petType + ". " + this.name + " is " + this.age + ". " + this.name + " has " + this.numLegs + " legs.";
-    };
+    }
 };
-Dog.prototype = Object.create(Pet.prototype);
+//Dog.prototype = Object.create(Pet.prototype);
 
 /////Child Object - Cat
 function Cat(name, breed, petType, age, numLegs) {
@@ -27,17 +27,17 @@ function Cat(name, breed, petType, age, numLegs) {
     this.numLegs = numLegs;
     this.getLegs = function() {
         return this.name + " has " + this.numLegs + " legs.";
-    };
+    }
 };
 
-Cat.prototype = Object.create(Pet.prototype);
+//Cat.prototype = Object.create(Pet.prototype);
 
 /////Child Object - Bird
-function Bird(name, breed, petType, age, numLegs){
+function Bird(name, breed, petType, age){
      Pet.call(this, name, breed, petType, age);
 };
 
-Bird.prototype = Object.create(Pet.prototype);
+//Bird.prototype = Object.create(Pet.prototype);
 
 /////Child Object - Fish
 function Fish(name, breed, petType, age)
@@ -48,7 +48,7 @@ function Fish(name, breed, petType, age)
     }
 };
 
-Fish.prototype = Object.create(Pet.prototype);
+//Fish.prototype = Object.create(Pet.prototype);
 
 /////other functions
 function pickPet(pet) {
