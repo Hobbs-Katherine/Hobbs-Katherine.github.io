@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CIT 260 - Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</title>
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/placement.css">
+    <link rel="stylesheet" href="css/area.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="LocalStorageAPIStoringRetrievingSimpleDataArraysAssociativeArraysObjects.js"></script>
+  </head>
+  <body class="bg-grey" onload="storageSupport();">
+    
+      <h1 class="text-center">CIT 260 - Local Storage API, Storing and Retrieving Simple Data*, Arrays,<br> Associative Arrays, and Objects</h1>
+      <h2>Local Storage </h2>
+      <label ></label>
+        <button type="button" onclick="addName();" class="btn btn-orange" id="addName">Add Name</button>
+        <button type="button" onclick="removeName();" class="btn btn-orange" id="removeName">Remove Name</button>
+       <h2>Storing Arrays</h2>
+        <button type="button" onclick="arrayStorage();" class="btn btn-orange" >Click to View Array</button>
+        <p id="myArray"></p>
+      <h2>Storing Associative Arrays</h2>
+       <button type="button" onclick="associativeArrayStorage();" class="btn btn-orange" >Click to View Associative Array</button>
+      <div>
+        <ul id="myAssociativeArray"></ul>
+      </div>
+      <h2>Storing Objects</h2>
+      <button type="button" onclick="objectStorage();" class="btn btn-orange" >Click to View Object</button>
+      <div id="myObject">
+      </div>
+      <h2>Clear Storage</h2>
+      <button type="button" onclick="clearStorage();" class="btn btn-orange" >Clear Storage</button>
+      <h3>* used in the above examples</h3>
+  </body>
+</html>
