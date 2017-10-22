@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CIT 260 - Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript</title>
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/placement.css">
+    <link rel="stylesheet" href="css/area.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="CSS3TransitionsAnimations.js"></script>
+    <style>
+      
+        .btn-red {
+            width: 20%;
+            font-size: 14px;
+            margin-left: 0%;
+            transition: background-color 2s, width 3s, font-size 3s, margin-left 4s;
+        }
+        
+        .btn-red-transition, .btn-red-transition:hover {
+            background-color: #E6A773;
+            width: 30%;
+            font-size: 20px;
+            margin-left: 50%;
+        }
+      
+        @keyframes animation {
+            0%   {background-color:#E67373; margin-left:0%;}
+            20%  {background-color:#E6A773;}
+            40%  {background-color:yellowgreen;}
+            60%  {background-color:#5cb85c;}
+            80%  {background-color:#458A8A;}
+            100% {background-color:#B85C90; margin-left:50%;}
+        }
+        
+        #animationButton {
+            animation-name: animation;
+            animation-duration: 10s;
+            animation-delay: 1s;
+            animation-iteration-count: 0;
+            animation-direction: alternate;
+        }
+    </style>
+  </head>
+  <body class="bg-grey">
+    
+      <h1 class="text-center">CIT 260 - Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript</h1>
+      <h2>Transitions</h2>
+        <button type="button" onclick="toggleTransition();" class="btn btn-red" id="transitionButton">Toggle Transition</button>
+       <h2>Animations</h2>
+      <button type="button" onclick="toggleAnimation();" class="btn btn-red" id="animationButton">Toggle Animation</button>
+      <h3>* used in the above examples</h3>
+  </body>
+</html>
