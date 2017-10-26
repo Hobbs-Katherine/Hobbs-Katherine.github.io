@@ -61,6 +61,11 @@ function transitionEvent1() {
     }
 }
 
-function touchEvent1() {
-    alert("success");
+function touchEvent1(state) {
+    if(state == "start") 
+        return "touch started";
+    else if (state == "move")
+        return "touch moved";
+    else 
+        return "touch ended";
 }

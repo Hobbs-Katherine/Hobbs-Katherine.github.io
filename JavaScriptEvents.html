@@ -54,7 +54,7 @@
        <h2>Transition Events</h2>
       <button type="button" onclick="transitionEvent1()" class="btn btn-green" id="transitionButton">Transition Toggle</button>
        <h2>Touch Events</h2>
-      <button type="button" ontouchstart="touchEvent1();" class="btn btn-blue">Toggle Animation</button>
+      <button type="button" ontouchstart="this.innerHTML = touchEvent1('start');" ontouchmove="this.innerHTML = touchEvent1('move');" ontouchend="this.innerHTML = touchEvent1('end');" class="btn btn-blue">Touch Start</button>
       <h3>* used in the above examples</h3>
       
       <script>
