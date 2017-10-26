@@ -34,15 +34,6 @@ function frameEvent2() {
     alert("Welcome, please click the buttons to see examples of JavaScript Events");
 }
 
-function frameEvent3() {
-    var w = window.outerWidth;
-    if(w < 1000)
-        alert("you have a small screen");
-    else {
-        alert("you have a big screen");
-    }
-}
-
 function animationEvent1() {
     if(button.style.animationIterationCount == "infinite") {
         button.style.animationIterationCount = 0;
@@ -63,7 +54,7 @@ function transitionEvent1() {
 
 function touchEvent1(state) {
     if(state == "start") 
-        return "touch started";
+        return "touch started, try moving your finger";
     else if (state == "move")
         return "touch moved";
     else 
