@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CIT 260 - Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events</title>
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/placement.css">
+    <link rel="stylesheet" href="css/area.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JavaScriptEvents.js"></script>
+      <style>
+          
+        .btn-green {
+            width: 20%;
+            font-size: 14px;
+            margin-left: 0%;
+            transition: background-color 2s, width 3s, font-size 3s, margin-left 4s;
+        }
+        
+        .btn-green-transition, .btn-green-transition:hover {
+            background-color: #E6A773;
+            width: 30%;
+            font-size: 20px;
+            margin-left: 50%;
+        }
+          
+       @keyframes animation {
+            0%   {background-color:#E67373; margin-left:0%;}
+            20%  {background-color:#E6A773;}
+            40%  {background-color:yellowgreen;}
+            60%  {background-color:#5cb85c;}
+            80%  {background-color:#458A8A;}
+            100% {background-color:#B85C90; margin-left:50%;}
+        }
+        
+      </style>
+  </head>
+  <body class="bg-grey" onpageShow="frameEvent2()" onload="frameEvent1()" onresize="frameEvent3()">
+    
+      <h1 class="text-center">CIT 260 - Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad*, etc.) and Animation and Transition Events</h1>
+      <h2>Mouse Events</h2>
+        <button type="button" onclick="this.innerHTML = mouseEvent1(this.innerHTML);" class="btn btn-orange">Click</button>
+        <button type="button" ondblclick="this.innerHTML = mouseEvent2(this.innerHTML);" class="btn btn-orange">Double Click</button>
+        <button type="button" onmousedown="this.innerHTML = mouseEvent3('down');" onmouseup="this.innerHTML = mouseEvent3('up');" class="btn btn-orange">Mouse Down/Up</button>
+      <button type="button" onmouseenter="this.innerHTML = mouseEvent4('enter');" onmouseleave="this.innerHTML = mouseEvent4('leave');" class="btn btn-orange">Mouse Enter/Leave</button>
+       <h2>Frame/Object Events</h2>
+      <label>Resize window to see event</label>
+       <h2>Animation Events</h2>
+      <button type="button" onclick="animationEvent1();" id="animationButton" class="btn btn-yellow" >Toggle Animation</button>
+       <h2>Transition Events</h2>
+      <button type="button" onclick="transitionEvent1()" class="btn btn-green" id="transitionButton">Transition Toggle</button>
+       <h2>Touch Events</h2>
+      <button type="button" ontouchstart="touchEvent1();" class="btn btn-blue">Toggle Animation</button>
+      <h3>* used in the above examples</h3>
+      
+      <script>
+      
+      var button = document.getElementById("animationButton");
+
+        function animationStart() {
+            this.innerHTML = "starting animation";
+        }
+
+        function animationRepeat() {
+            this.innerHTML = "repeating animation";
+        }
+
+        function animationEnd() {
+            this.innerHTML = "end of animation";
+        }
+
+        button.addEventListener("animationstart", animationStart);
+        button.addEventListener("animationiteration", animationRepeat);
+        button.addEventListener("animationend", animationEnd);
+          
+        function transitionEnd() {
+            this.innerHTML = "end of transition";
+        }
+        document.getElementById("transitionButton").addEventListener("transitionend", transitionEnd);
+      </script>
+  </body>
+</html>
