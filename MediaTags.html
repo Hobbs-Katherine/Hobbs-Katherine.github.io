@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CIT 260 - HTML5 Tags - Video, Audio, and Canvas</title>
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/placement.css">
+    <link rel="stylesheet" href="css/area.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="MediaTags.js"></script>
+    <style>
+        #canvas {
+           margin: 10px;
+           padding: 10px;
+           background: #ffffff;
+           border: thin inset #aaaaaa;
+        }
+      </style>
+  </head>
+  <body class="bg-grey" onload="drawTemple()">
+    
+      <h1 class="text-center">CIT 260 - HTML5 Tags - Video, Audio, and Canvas</h1>
+      <h2>Video</h2>
+      <video width="400" controls autoplay>
+        <source src="2012-08-008-reclaimed-360p-eng.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <video width="400" controls>
+        <source src="2013-03-004-courage-360p-eng.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <p>A special thanks to <a href="https://www.lds.org/?lang=eng">LDS.org</a></p>
+       <h2>Audio</h2>
+      <audio controls>
+        <source src="2017-09-0040-dieter-f-uchtdorf-64k-eng.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+       <p>A special thanks to <a href="https://www.lds.org/?lang=eng">LDS.org</a></p>
+       <h2>Canvas</h2>
+      <canvas id='canvas' width='282' height='400'>
+        Canvas not supported
+      </canvas>
+      <h3>* used in the above examples</h3>
+      
+  </body>
+</html>
