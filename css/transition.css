@@ -1,0 +1,40 @@
+.trans-shape-circle-to-square {
+    transition: border-radius 1s ease-in-out;
+}
+
+.trans-shape-circle-to-square:hover {
+    border-radius: 2%;
+}
+
+.trans-shape-oval-to-rectangle {
+    transition: border-radius 2s, height 2s;
+}
+
+.trans-shape-oval-to-rectangle:hover {
+    border-radius: 2%;
+    height: 80px;
+}
+
+.trans-color {
+    transition: background-color 1.5s 0.5s;
+}
+
+.trans-color:hover {
+    background-color: yellowgreen;
+}
+
+.trans-margin {
+    transition: margin 1.5s linear;
+}
+
+.trans-margin:hover {
+    margin: 70px auto;
+}
+
+.trans-scale {
+    transition: transform 2s ease-in;
+}
+
+.trans-scale:hover {
+    transform: scale(2);
+}
