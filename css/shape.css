@@ -32,3 +32,24 @@
 	border-bottom: 40px solid #287272;
     margin: 50px auto;
 }
+
+
+.square-outline-dashed {
+    width: 40px;
+    height: 40px;
+    margin: 50px;
+    border: dashed;
+    border-color: #E67373 #5cb85c #458A8A #B85C90;
+    position:absolute;
+    z-index: 0;
+}
+
+.square-outline-solid {
+    width: 40px;
+    height: 40px;
+    margin: 50px;
+    border: solid;
+    position: absolute;
+    z-index: 1;
+    border-color: red green blue purple;
+}

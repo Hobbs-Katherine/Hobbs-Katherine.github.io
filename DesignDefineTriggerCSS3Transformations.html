@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CIT 260 - Designing, Defining, and Triggering CSS3 Transforms without Custom Libraries (Thought Library)</title>
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/placement.css">
+    <link rel="stylesheet" href="css/area.css">
+    <link rel="stylesheet" href="css/shape.css">
+    <link rel="stylesheet" href="css/transformation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container {
+            display: inline-block;
+            border: solid;
+            width: 150px;
+            height:150px;
+        }
+        .transition {
+            transition: transform 2s ease-in;
+        }
+    </style>
+  </head>
+  <body class="bg-grey">
+    
+      <h1 class="text-center">CIT 260 - Designing, Defining, and Triggering CSS3 Transforms without Custom Libraries (Thought Library)</h1>
+      <h2>2D Transformations</h2>
+      <h3>Hover over the shapes to see what they do</h3>
+        <div class="container">
+            <div class="square-outline-dashed"></div>
+            <div title="translate" class="square-outline-solid transition translate"></div>
+        </div>
+        <div class="container">
+            <div class="square-outline-dashed"></div>
+            <div title="rotate" class="square-outline-solid transition rotate"></div>
+        </div>
+        <div class="container">
+            <div class="square-outline-dashed"></div>
+            <div title="scale" class="square-outline-solid transition scale"></div>
+        </div>
+        <div class="container">
+            <div class="square-outline-dashed"></div>
+            <div title="skew" class="square-outline-solid transition skew"></div>
+        </div>
+        <div class="container">
+            <div class="square-outline-dashed"></div>
+            <div title="matrix" class="square-outline-solid transition matrix"></div>
+        </div>
+      <br>
+        <h2>3D Transformations</h2>
+        <h3>Hover over the shapes to see what they do</h3>
+        <div class="container">
+            <div class="square-outline-dashed"></div>
+            <div title="rotate x-axis" class="square-outline-solid transition rotate-x"></div>
+        </div>
+        <div class="container">
+            <div class="square-outline-dashed"></div>
+            <div title="rotate y-axis" class="square-outline-solid transition rotate-y"></div>
+        </div>
+        <div class="container">
+            <div class="square-outline-dashed"></div>
+            <div title="rotate z-axis" class="square-outline-solid transition rotate-z"></div>
+        </div>
+        <div class="container">
+            <div class="square-outline-dashed"></div>
+            <div title="rotate x-axis and y-axis" class="square-outline-solid transition rotate-3d-x-y"></div>
+        </div>
+        <div class="container">
+            <div class="square-outline-dashed"></div>
+            <div title="rotate y-axis and z-axis" class="square-outline-solid transition rotate-3d-y-z"></div>
+        </div>
+        <div class="container">
+            <div class="square-outline-dashed"></div>
+            <div title="rotate x-axis and z-axis" class="square-outline-solid transition rotate-3d-x-z"></div>
+        </div>
+      <h3>* used in the above examples</h3>
+  </body>
+</html>

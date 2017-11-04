@@ -1,0 +1,43 @@
+.translate:hover {
+    transform: translate(-10px, 10px);
+}
+
+.rotate:hover {
+    transform: rotate(25deg);
+}
+
+.scale:hover {
+    transform: scale(2, 2);
+}
+
+.skew:hover {
+    transform: skew(25deg, 25deg);
+}
+
+.matrix:hover {
+    transform: matrix(0.5, 2, 2, 0.5, 0, 0);
+}
+
+.rotate-x:hover {
+    transform: rotateX(180deg);
+}
+
+.rotate-y:hover {
+    transform: rotateY(180deg);
+}
+
+.rotate-z:hover {
+    transform: rotateZ(180deg);
+}
+
+.rotate-3d-x-y:hover {
+    transform: rotate3d(1, 1, 0, 180deg);
+}
+
+.rotate-3d-y-z:hover {
+    transform: rotate3d(0, 1, 1, 360deg);
+}
+
+.rotate-3d-x-z:hover {
+    transform: rotate3d(1, 0, 1, 360deg);
+}
