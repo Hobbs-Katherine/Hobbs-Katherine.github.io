@@ -197,6 +197,5 @@ function displayStarship(obj) {
     info += "<p><b>Cargo Capacity:</b> " + obj.cargo_capacity + "</p>";
     info += "<p><b>Hyperdrive Rating:</b> " + obj.hyperdrive_rating + "</p>";
     info += "<p><b>Starship Class:</b> " + obj.starship_class + "</p>";
-    info += "<p><b>Films:</b></p>";
     document.querySelector("#parsedJSON").innerHTML = info;
 }
