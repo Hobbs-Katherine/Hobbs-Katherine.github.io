@@ -80,20 +80,20 @@ function getPeople() {
 function select(personId) {
     var personList = getPeople();
     var personAncestors = personList["indv-" + personId].ancestors;
-    document.getElementById("indv-" + personId).style.backgroundColor = "blue";
+    document.getElementById("indv-" + personId).classList.add("individual-hover")
     for(var i = 0; i < personAncestors.length; i++) {
         var ancestorId = personAncestors[i];
-        document.getElementById("indv-" + ancestorId).style.backgroundColor = "blue";
+        document.getElementById("indv-" + ancestorId).classList.add("individual-hover");
     }
 }
 
 function deselect(personId) {
     var personList = getPeople();
     var personAncestors = personList["indv-" + personId].ancestors;
-     document.getElementById("indv-" + personId).style.backgroundColor = "";
+     document.getElementById("indv-" + personId).classList.remove("individual-hover");
     for(var i = 0; i < personAncestors.length; i++) {
         var ancestorId = personAncestors[i];
-        document.getElementById("indv-" + ancestorId).style.backgroundColor = "";
+        document.getElementById("indv-" + ancestorId).classList.remove("individual-hover");
     }
 }
 
@@ -103,8 +103,8 @@ function addImages() {
     for(person in personList) {
         var img = document.createElement("IMG");
         img.setAttribute("src", personList[person].image);
-        img.setAttribute("width", 50);
-        img.setAttribute("height", 70);
+        img.setAttribute("width", "100%");
+        img.setAttribute("height", "100%");
         document.querySelector("#" + person).appendChild(img);
     }
 }

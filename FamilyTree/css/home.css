@@ -3,6 +3,11 @@
     height: 70px;
     border: dashed;
     display: inline-block;
+    transition: transform .5s ease-in-out;
+}
+
+.individual-hover {
+    transform: scale(1.1);
 }
 
 .couple {
