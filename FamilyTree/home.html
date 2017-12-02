@@ -11,89 +11,141 @@
     <link rel="stylesheet" href="../css/placement.css">
     <link rel="stylesheet" href="../css/area.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/modal.css">
     <script src="home.js"></script>
   </head>
-  <body class="bg-grey" onload="addImages()">
-    
-      <h1 class="text-center">Hunter Family Tree</h1>
-     
+  <body class="bg-grey" onload="addImages();">
+    <header class="bg-blue">
+      <h1 class="text-center text-white">Hunter Family Tree</h1>
+    </header>
+      <br>
       <div id="tree">
         <div id="gen-4" class="gen">
             <div id="gen-4-couple-1" class="couple">
-                <div id="indv-21" class="individual" onmouseover="select(21)" onmouseout="deselect(21)">
+                <div id="indv-21" class="individual" 
+                     onclick="displayModal(21)"
+                     onmouseover="select(21)" onmouseout="deselect(21)">
                 </div>
-                <div id="indv-22" class="individual" onmouseover="select(22)" onmouseout="deselect(22)">
+                <div id="indv-22" class="individual"
+                     onclick="displayModal(22)"
+                     onmouseover="select(22)" onmouseout="deselect(22)">
                 </div>
             </div>
              <div id="gen-4-couple-2" class="couple">
-                <div id="indv-23" class="individual" onmouseover="select(23)" onmouseout="deselect(23)">
+                <div id="indv-23" class="individual"
+                     onclick="displayModal(23)"
+                     onmouseover="select(23)" onmouseout="deselect(23)">
                 </div>
-                <div id="indv-24" class="individual" onmouseover="select(24)" onmouseout="deselect(24)">
+                <div id="indv-24" class="individual"
+                     onclick="displayModal(24)"
+                     onmouseover="select(24)" onmouseout="deselect(24)">
                 </div>
             </div>
              <div id="gen-4-couple-3" class="couple">
-                <div id="indv-25" class="individual" onmouseover="select(25)" onmouseout="deselect(25)">
+                <div id="indv-25" class="individual"
+                     onclick="displayModal(25)"
+                     onmouseover="select(25)" onmouseout="deselect(25)">
                 </div>
-                <div id="indv-26" class="individual" onmouseover="select(26)" onmouseout="deselect(26)">
+                <div id="indv-26" class="individual" 
+                     onclick="displayModal(26)"
+                     onmouseover="select(26)" onmouseout="deselect(26)">
                 </div>
             </div>
              <div id="gen-4-couple-4" class="couple">
-                <div id="indv-27" class="individual" onmouseover="select(27)" onmouseout="deselect(27)">
+                <div id="indv-27" class="individual" 
+                     onclick="displayModal(27)"
+                     onmouseover="select(27)" onmouseout="deselect(27)">
                 </div>
-                <div id="indv-28" class="individual" onmouseover="select(28)" onmouseout="deselect(28)">
+                <div id="indv-28" class="individual" 
+                     onclick="displayModal(28)"
+                     onmouseover="select(28)" onmouseout="deselect(28)">
                 </div>
             </div>
              <div id="gen-4-couple-5" class="couple">
-                <div id="indv-29" class="individual" onmouseover="select(29)" onmouseout="deselect(29)">
+                <div id="indv-29" class="individual"
+                     onclick="displayModal(29)"
+                     onmouseover="select(29)" onmouseout="deselect(29)">
                 </div>
-                <div id="indv-30" class="individual" onmouseover="select(30)" onmouseout="deselect(30)">
+                <div id="indv-30" class="individual" 
+                     onclick="displayModal(30)"
+                     onmouseover="select(30)" onmouseout="deselect(30)">
                 </div>
             </div>
              <div id="gen-4-couple-6" class="couple">
-                <div id="indv-31" class="individual" onmouseover="select(31)" onmouseout="deselect(31)">
+                <div id="indv-31" class="individual" 
+                     onclick="displayModal(31)"
+                     onmouseover="select(31)" onmouseout="deselect(31)">
                 </div>
-                <div id="indv-32" class="individual" onmouseover="select(32)" onmouseout="deselect(32)">
+                <div id="indv-32" class="individual" 
+                     onclick="displayModal(32)"
+                     onmouseover="select(32)" onmouseout="deselect(32)">
                 </div>
             </div>
             <div id="gen-4-couple-7" class="couple">
-                <div id="indv-33" class="individual" onmouseover="select(33)" onmouseout="deselect(33)">
+                <div id="indv-33" class="individual" 
+                     onclick="displayModal(33)"
+                     onmouseover="select(33)" onmouseout="deselect(33)">
                 </div>
-                <div id="indv-34" class="individual" onmouseover="select(34)" onmouseout="deselect(34)">
+                <div id="indv-34" class="individual" 
+                     onclick="displayModal(34)"
+                     onmouseover="select(34)" onmouseout="deselect(34)">
                 </div>
             </div>
             <div id="gen-4-couple-8" class="couple">
-                <div id="indv-35" class="individual" onmouseover="select(35)" onmouseout="deselect(35)">
+                <div id="indv-35" class="individual" 
+                     onclick="displayModal(35)"
+                     onmouseover="select(35)" onmouseout="deselect(35)">
                 </div>
-                <div id="indv-36" class="individual" onmouseover="select(36)" onmouseout="deselect(36)">
+                <div id="indv-36" class="individual" 
+                     onclick="displayModal(36)"
+                     onmouseover="select(36)" onmouseout="deselect(36)">
                 </div>
             </div>
         </div>
+          <br>
         <div id="gen-3" class="gen">
             <div id="gen-3-couple-1" class="couple">
-                <div id="indv-13" class="individual" onmouseover="select(13)" onmouseout="deselect(13)">
+                <div id="indv-13" class="individual" 
+                     onclick="displayModal(13)"
+                     onmouseover="select(13)" onmouseout="deselect(13)">
                 </div>
-                <div id="indv-14" class="individual" onmouseover="select(14)" onmouseout="deselect(14)">
+                <div id="indv-14" class="individual" 
+                     onclick="displayModal(14)"
+                     onmouseover="select(14)" onmouseout="deselect(14)">
                 </div>
             </div>
             <div id="gen-3-couple-2" class="couple">
-                <div id="indv-15" class="individual" onmouseover="select(15)" onmouseout="deselect(15)">
+                <div id="indv-15" class="individual" 
+                     onclick="displayModal(15)"
+                     onmouseover="select(15)" onmouseout="deselect(15)">
                 </div>
-                <div id="indv-16" class="individual" onmouseover="select(16)" onmouseout="deselect(16)">
+                <div id="indv-16" class="individual" 
+                     onclick="displayModal(16)"
+                     onmouseover="select(16)" onmouseout="deselect(16)">
                 </div>
             </div>
             <div id="gen-3-couple-3" class="couple">
-                <div id="indv-17" class="individual" onmouseover="select(17)" onmouseout="deselect(17)">
+                <div id="indv-17" class="individual" 
+                     onclick="displayModal(17)"
+                     onmouseover="select(17)" onmouseout="deselect(17)">
                 </div>
-                <div id="indv-18" class="individual" onmouseover="select(18)" onmouseout="deselect(18)">
+                <div id="indv-18" class="individual"
+                     onclick="displayModal(18)"
+                     onmouseover="select(18)" onmouseout="deselect(18)">
                 </div>
             </div>
             <div id="gen-3-couple-4" class="couple">
-                <div id="indv-19" class="individual" onmouseover="select(19)" onmouseout="deselect(19)">
+                <div id="indv-19" class="individual" 
+                     onclick="displayModal(19)"
+                     onmouseover="select(19)" onmouseout="deselect(19)">
                 </div>
-                <div id="indv-20" class="individual" onmouseover="select(20)" onmouseout="deselect(20)">
+                <div id="indv-20" class="individual" 
+                     onclick="displayModal(20)"
+                     onmouseover="select(20)" onmouseout="deselect(20)">
                 </div>
             </div>
         </div>
+          <br>
         <div id="gen-2" class="gen">
             <div id="gen-2-couple-1" class="couple">
                 <div id="indv-9" class="individual" onmouseover="select(9)" onmouseout="deselect(9)">
@@ -132,5 +184,37 @@
             </div>
         </div>
       </div>
+      
+      <!-- Modal -->
+    <div id="id01" class="modal">
+      <div class="modal-content card animate-top">
+        <header class="container bg-blue text-white">
+			<div class="center">
+                <h2 id="name-pl">Name Placeholder</h2>
+			</div>
+			<div class="display-topright padding">
+				<img class="animate-opacity" src="images/close-icon.png" style="margin:auto;" onclick="document.getElementById('id01').style.display='none'" class="margin-top" width="30px;">
+			</div>
+        </header>
+        <div class="padding">
+            <h4>Birth Date:</h4> 
+            <p id="b-date-pl" class="i-b">Birth Date Placeholder</p> <br>
+            <h4>Birth Place:</h4>
+            <p id="b-place-pl" class="i-b">Birth Place Placeholder</p> <br>
+            <h4>Death Date:</h4>
+            <p id="d-date-pl" class="i-b">Death Date Placeholder</p> <br>
+            <h4>Death Place:</h4>
+            <p id="d-place-pl" class="i-b">Death Place Placeholder</p> <br>
+            <h4>Other Info:</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <footer class="container bg-blue">
+          <br>
+          <br>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

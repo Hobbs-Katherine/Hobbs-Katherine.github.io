@@ -1,13 +1,15 @@
 .individual {
     width: 50px;
     height: 70px;
-    border: dashed;
+    border: ridge;
+    border-width: 2px;
+    border-color: #458A8A;
     display: inline-block;
-    transition: transform .5s ease-in-out;
+    transition: transform .5s linear;
 }
 
 .individual-hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .couple {
@@ -50,4 +52,9 @@
 
 hr {
     width:50%;
+}
+
+.i-b, h4 {
+    display: inline-block;
+    margin-bottom: auto;
 }
