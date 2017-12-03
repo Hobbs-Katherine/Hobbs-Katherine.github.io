@@ -4,8 +4,9 @@ function Person(name, image, ancestors) {
     this.ancestors = ancestors; //array for highlighting ancestors
 };
 
-function LivingPerson(name, image, ancestors) {
+function LivingPerson(name, image, ancestors, video) {
     Person.call(this, name, image, ancestors);
+    this.video = video;
 };
 
 function DeceasedPerson(name, image, birthdate, birthplace, deathdate, deathplace, ancestors) {
@@ -23,21 +24,21 @@ function getPeople() {
     var personList = [];
     
     //gen-0
-    personList["indv-1"] = new LivingPerson("Kevin", "images/1.jpg", siblingAncestors);
-    personList["indv-2"] = new LivingPerson("Kimmi", "images/2.jpg", siblingAncestors);
-    personList["indv-3"] = new LivingPerson("Stephanie", "images/3.jpg", siblingAncestors);
-    personList["indv-4"] = new LivingPerson("Katherine", "images/4.jpg", siblingAncestors);
-    personList["indv-5"] = new LivingPerson("Julianne", "images/5.jpg", siblingAncestors);
-    personList["indv-6"] = new LivingPerson("Jessica", "images/6.jpg", siblingAncestors);
+    personList["indv-1"] = new LivingPerson("Kevin", "images/1.jpg", siblingAncestors, "videos/kevin.mp4");
+    personList["indv-2"] = new LivingPerson("Kimmi", "images/2.jpg", siblingAncestors, "videos/kimmi.mp4");
+    personList["indv-3"] = new LivingPerson("Stephanie", "images/3.jpg", siblingAncestors, "videos/stephanie.mp4");
+    personList["indv-4"] = new LivingPerson("Katherine", "images/4.jpg", siblingAncestors, "videos/katherine.mp4");
+    personList["indv-5"] = new LivingPerson("Julianne", "images/5.jpg", siblingAncestors, "videos/julianne.mp4");
+    personList["indv-6"] = new LivingPerson("Jessica", "images/6.jpg", siblingAncestors, "videos/jessica.mp4");
     //gen-1
-    personList["indv-7"] = new LivingPerson("Wayne Hunter", "images/7.jpg", [9, 10, 13, 14, 15, 16, 21, 22, 23, 24, 25, 26, 27, 28]);
-    personList["indv-8"] = new LivingPerson("Rebecca Ricks", "images/8.jpg", [11, 12, 17, 18, 19, 20, 29, 30, 31, 32, 33, 34, 35, 36]);
+    personList["indv-7"] = new LivingPerson("Wayne Hunter", "images/7.jpg", [9, 10, 13, 14, 15, 16, 21, 22, 23, 24, 25, 26, 27, 28], "videos/wayne.mp4");
+    personList["indv-8"] = new LivingPerson("Rebecca Ricks", "images/8.jpg", [11, 12, 17, 18, 19, 20, 29, 30, 31, 32, 33, 34, 35, 36], "videos/becky.mp4");
     
     //gen-2
-    personList["indv-9"] = new LivingPerson("Lavell Hunter", "images/9.jpg", [13, 14, 21, 22, 23, 24]);
-    personList["indv-10"] = new LivingPerson("Kathleen Mackley", "images/10.jpg", [15, 16, 25, 26, 27, 28]);
-    personList["indv-11"] = new LivingPerson("Bert Ricks", "images/11.jpg", [17, 18, 29, 30, 31,32]);
-    personList["indv-12"] = new LivingPerson("Dorothy Christiansen", "images/12.jpg", [19, 20, 33, 34, 35, 36]);
+    personList["indv-9"] = new LivingPerson("Lavell Hunter", "images/9.jpg", [13, 14, 21, 22, 23, 24], "videos/lavell.mp4");
+    personList["indv-10"] = new LivingPerson("Kathleen Mackley", "images/10.jpg", [15, 16, 25, 26, 27, 28], "videos/kathy.mp4");
+    personList["indv-11"] = new LivingPerson("Bert Ricks", "images/11.jpg", [17, 18, 29, 30, 31,32], "videos/bert.mp4");
+    personList["indv-12"] = new LivingPerson("Dorothy Christiansen", "images/12.jpg", [19, 20, 33, 34, 35, 36], "videos/dorothy.mp4");
     
     //gen-3
     personList["indv-13"] = new DeceasedPerson("Mac Kay Hunter", "images/13.jpg", "6 July 1906", "Mount Glen, Union, Oregon, United States", "11 April 1997", "Boise, Ada, Idaho, United States", [21, 22]);
@@ -127,3 +128,14 @@ function displayModal(personId) {
     document.getElementById("d-date-pl").innerHTML = person.deathdate;
     document.getElementById("d-place-pl").innerHTML = person.deathplace;
 }
+
+function displayLivingModal(personId) {
+    document.getElementById('id02').style.display='block';
+    var personList = getPeople();
+    var person = personList["indv-" + personId];
+    
+    document.getElementById("video-pl").setAttribute("src", person.video);
+    document.getElementById("video").load();
+}
+
+

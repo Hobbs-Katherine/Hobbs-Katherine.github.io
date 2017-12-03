@@ -148,39 +148,63 @@
           <br>
         <div id="gen-2" class="gen">
             <div id="gen-2-couple-1" class="couple">
-                <div id="indv-9" class="individual" onmouseover="select(9)" onmouseout="deselect(9)">
+                <div id="indv-9" class="individual" 
+                     onclick="displayLivingModal(9)"
+                     onmouseover="select(9)" onmouseout="deselect(9)">
                 </div>
-                <div id="indv-10" class="individual" onmouseover="select(10)" onmouseout="deselect(10)">
+                <div id="indv-10" class="individual" 
+                     onclick="displayLivingModal(10)"
+                     onmouseover="select(10)" onmouseout="deselect(10)">
                 </div>
             </div>
              <div id="gen-2-couple-2" class="couple">
-                <div id="indv-11" class="individual" onmouseover="select(11)" onmouseout="deselect(11)">
+                <div id="indv-11" class="individual" 
+                     onclick="displayLivingModal(11)"
+                     onmouseover="select(11)" onmouseout="deselect(11)">
                 </div>
-                <div id="indv-12" class="individual" onmouseover="select(12)" onmouseout="deselect(12)">
+                <div id="indv-12" class="individual" 
+                     onclick="displayLivingModal(12)"
+                     onmouseover="select(12)" onmouseout="deselect(12)">
                 </div>
             </div>
         </div>
         <div id="gen-1" class="gen root">
             <div id="gen-1-couple-1" class="couple">
-                <div id="indv-7" class="individual" onmouseover="select(7)" onmouseout="deselect(7)">
+                <div id="indv-7" class="individual" 
+                     onclick="displayLivingModal(7)"
+                     onmouseover="select(7)" onmouseout="deselect(7)">
                 </div>
-                <div id="indv-8" class="individual" onmouseover="select(8)" onmouseout="deselect(8)">
+                <div id="indv-8" class="individual" 
+                     onclick="displayLivingModal(8)"
+                     onmouseover="select(8)" onmouseout="deselect(8)">
                 </div>
             </div>
         </div>
         <hr>
         <div id="gen-0" class="gen">
-            <div id="indv-1" class="individual" onmouseover="select(1)" onmouseout="deselect(1)">
+            <div id="indv-1" class="individual" 
+                 onclick="displayLivingModal(1)"
+                 onmouseover="select(1)" onmouseout="deselect(1)">
             </div>
-             <div id="indv-2" class="individual" onmouseover="select(2)" onmouseout="deselect(2)">
+             <div id="indv-2" class="individual" 
+                  onclick="displayLivingModal(2)"
+                  onmouseover="select(2)" onmouseout="deselect(2)">
             </div>
-             <div id="indv-3" class="individual" onmouseover="select(3)" onmouseout="deselect(3)">
+             <div id="indv-3" class="individual" 
+                  onclick="displayLivingModal(3)"
+                  onmouseover="select(3)" onmouseout="deselect(3)">
             </div>
-             <div id="indv-4" class="individual" onmouseover="select(4)" onmouseout="deselect(4)">
+             <div id="indv-4" class="individual" 
+                  onclick="displayLivingModal(4)"
+                  onmouseover="select(4)" onmouseout="deselect(4)">
             </div>
-             <div id="indv-5" class="individual" onmouseover="select(5)" onmouseout="deselect(5)">
+             <div id="indv-5" class="individual" 
+                  onclick="displayLivingModal(5)"
+                  onmouseover="select(5)" onmouseout="deselect(5)">
             </div>
-             <div id="indv-6" class="individual" onmouseover="select(6)" onmouseout="deselect(6)">
+             <div id="indv-6" class="individual" 
+                  onclick="displayLivingModal(6)"
+                  onmouseover="select(6)" onmouseout="deselect(6)">
             </div>
         </div>
       </div>
@@ -213,6 +237,32 @@
         <footer class="container bg-blue">
           <br>
           <br>
+        </footer>
+      </div>
+    </div>
+      
+           <!-- Modal -->
+    <div id="id02" class="modal">
+      <div class="modal-content card animate-top">
+        <header class="container bg-blue text-white">
+			<div class="center">
+                <h2>Please enjoy the following video brought to you by lds.org.</h2>
+			</div>
+			<div class="display-topright padding">
+				<img class="animate-opacity" src="images/close-icon.png" style="margin:auto;" onclick="document.getElementById('id02').style.display='none';document.getElementById('video').pause();" class="margin-top" width="30px;">
+			</div>
+        </header>
+        <div class="padding">
+            <video width="500" controls id="video">
+                <source id="video-pl" src="videos/katherine.mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <footer class="container bg-blue text-white">
+            <div>
+                <h3>We can't share private information of a living individual</h3>
+            </div>
         </footer>
       </div>
     </div>
