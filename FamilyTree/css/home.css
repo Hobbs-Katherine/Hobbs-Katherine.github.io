@@ -58,3 +58,12 @@ hr {
     display: inline-block;
     margin-bottom: auto;
 }
+
+video {
+    padding: 30px;
+    margin: 0px auto;
+}
+
+.psudo-link:hover {
+    color:gainsboro;
+}

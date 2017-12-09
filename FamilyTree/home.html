@@ -13,10 +13,21 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/modal.css">
     <script src="home.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
   <body class="bg-grey" onload="addImages();">
-    <header class="bg-blue">
-      <h1 class="text-center text-white">Hunter Family Tree</h1>
+    <header class="bg-blue text-white">
+        <div>
+            <h1 class="text-center p-t-1">~ Hunter Family Tree ~</h1>
+            <hr style="margin-bottom: -25px;margin-top: -15px;">
+        </div>
+        <div class="text-center p-b-1 p-t-1">
+            <h4 class="psudo-link" onclick="unloadChart();">HOME</h4>
+            <span class="p-l-1"></span>
+            <h4 class="psudo-link" onclick="loadChart();">TIMELINE</h4>
+            <span class="p-l-1"></span>
+            <h4 class="psudo-link" onclick="drawCanvas()">CHRISTMAS MESSAGE</h4>
+        </div>
     </header>
       <br>
       <div id="tree">
@@ -209,6 +220,8 @@
         </div>
       </div>
       
+      <div id="chart" class="p-t-1 p-r-10 p-l-10"></div>
+      
       <!-- Modal -->
     <div id="id01" class="modal">
       <div class="modal-content card animate-top">
@@ -262,6 +275,35 @@
         <footer class="container bg-blue text-white">
             <div>
                 <h3>We can't share private information of a living individual</h3>
+            </div>
+        </footer>
+      </div>
+    </div>
+      
+                 <!-- Modal -->
+    <div id="id03" class="modal">
+      <div class="modal-content card animate-top">
+        <header class="container bg-blue text-white">
+			<div class="center">
+                <h2>Merry Christmas Family</h2>
+			</div>
+			<div class="display-topright padding">
+				<img class="animate-opacity" src="images/close-icon.png" style="margin:auto;" onclick="document.getElementById('id03').style.display='none';document.getElementById('video').pause();" class="margin-top" width="30px;">
+			</div>
+        </header>
+        <div class="padding">
+            <div class="i-b p-r-1 p-l-1">
+                <br>
+            <canvas class="i-b" id="canvas" width="200" height="200"></canvas>
+            </div> 
+            <div class="i-b w-50 p-l-1 p-b-1">
+                <h4>This Christmas I wanted to give you a gift that would last longer than a chocolate orange or knitted sweater. The gift I want to give is a Christmas <i>family</i> tree. I've only included a few generations but I hope that you will explore beyond what I have created here. I hope that as you explore each individual that you will feel a connection to those who have paved the way for us and learn from their legacy of faith.</h4>
+            </div>
+        </div>
+
+        <footer class="container bg-blue text-white">
+            <div>
+                <h3>With Love From Katherine</h3>
             </div>
         </footer>
       </div>
