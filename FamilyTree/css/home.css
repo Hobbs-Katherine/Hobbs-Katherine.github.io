@@ -66,4 +66,5 @@ video {
 
 .psudo-link:hover {
     color:gainsboro;
+    text-decoration: underline;
 }
