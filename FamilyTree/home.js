@@ -1,3 +1,8 @@
+function onloadActivities() {
+    addImages();
+    showChristmasMessage();
+}
+
 function Person(name, image, ancestors) {
     this.name = name;
     this.image = image;
@@ -274,4 +279,21 @@ function drawHalfCircle2(ctx) {
     ctx.beginPath();
     ctx.arc(6,36,62,0.3*Math.PI,0.8*Math.PI);
     ctx.stroke();
+}
+
+function showChristmasMessage() {
+ // localStorage.clear(); //for debugging
+  if (typeof(Storage) !== "undefined") {
+       if(localStorage.getItem("christmasMessage") === null) {
+           drawCanvas();
+       }
+   } 
+}
+
+function setChristmasMessage() {
+    if (typeof(Storage) !== "undefined") {
+        if(localStorage.getItem("christmasMessage") != false) {
+            localStorage.setItem("christmasMessage", false);
+        }
+    }
 }

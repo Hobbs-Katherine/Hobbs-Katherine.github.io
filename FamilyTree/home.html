@@ -15,7 +15,7 @@
     <script src="home.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
-  <body class="bg-grey" onload="addImages();">
+  <body class="bg-grey" onload="onloadActivities();">
     <header class="bg-blue text-white">
         <div>
             <h1 class="text-center p-t-1">~ Hunter Family Tree ~</h1>
@@ -288,7 +288,7 @@
                 <h2>Merry Christmas Family</h2>
 			</div>
 			<div class="display-topright padding">
-				<img class="animate-opacity" src="images/close-icon.png" style="margin:auto;" onclick="document.getElementById('id03').style.display='none';document.getElementById('video').pause();" class="margin-top" width="30px;">
+				<img class="animate-opacity" src="images/close-icon.png" style="margin:auto;" onclick="document.getElementById('id03').style.display='none';setChristmasMessage();" class="margin-top" width="30px;">
 			</div>
         </header>
         <div class="padding">
