@@ -64,7 +64,28 @@ video {
     margin: 0px auto;
 }
 
+.psudo-link {
+     transition: transform .1.5s;
+}
+
 .psudo-link:hover {
     color:gainsboro;
     text-decoration: underline;
+}
+
+.click {
+   transform: translate(0px, 2px); 
+}
+
+.christmas-color {
+    animation-name: christmas-color;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes christmas-color {
+    0%   {background-color: red;}
+    30%  {background-color: gold;}
+    100% {background-color: green;}
 }

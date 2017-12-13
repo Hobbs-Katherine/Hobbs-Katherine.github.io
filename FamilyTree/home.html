@@ -22,11 +22,17 @@
             <hr style="margin-bottom: -25px;margin-top: -15px;">
         </div>
         <div class="text-center p-b-1 p-t-1">
-            <h4 class="psudo-link" onclick="unloadChart();">HOME</h4>
+            <h4 class="psudo-link"             onmousedown="this.classList.add('click');" 
+            onmouseup="this.classList.remove('click');" 
+            onclick="unloadChart();">HOME</h4>
             <span class="p-l-1"></span>
-            <h4 class="psudo-link" onclick="loadChart();">TIMELINE</h4>
+            <h4 class="psudo-link" 
+            onmousedown="this.classList.add('click');" 
+            onmouseup="this.classList.remove('click');" onclick="loadChart();">TIMELINE</h4>
             <span class="p-l-1"></span>
-            <h4 class="psudo-link" onclick="drawCanvas()">CHRISTMAS MESSAGE</h4>
+            <h4 class="psudo-link" 
+            onmousedown="this.classList.add('click');" 
+            onmouseup="this.classList.remove('click');" onclick="document.getElementById('id03').style.display='block'">CHRISTMAS MESSAGE</h4>
         </div>
     </header>
       <br>
@@ -227,7 +233,7 @@
       <div class="modal-content card animate-top">
         <header class="container bg-blue text-white">
 			<div class="center">
-                <h2 id="name-pl">Name Placeholder</h2>
+                <h2 id="name-pl" class="i-b">Name Placeholder</h2>
 			</div>
 			<div class="display-topright padding">
 				<img class="animate-opacity" src="images/close-icon.png" style="margin:auto;" onclick="document.getElementById('id01').style.display='none'" class="margin-top" width="30px;">
@@ -242,9 +248,8 @@
             <p id="d-date-pl" class="i-b">Death Date Placeholder</p> <br>
             <h4>Death Place:</h4>
             <p id="d-place-pl" class="i-b">Death Place Placeholder</p> <br>
-            <h4>Other Info:</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h4 id="factHeader" style="display:none"> Interesting Fact:</h4>
+            <p id="fact"></p>
         </div>
 
         <footer class="container bg-blue">
@@ -283,7 +288,7 @@
                  <!-- Modal -->
     <div id="id03" class="modal">
       <div class="modal-content card animate-top">
-        <header class="container bg-blue text-white">
+        <header class="container christmas-color text-white">
 			<div class="center">
                 <h2>Merry Christmas Family</h2>
 			</div>
@@ -301,7 +306,7 @@
             </div>
         </div>
 
-        <footer class="container bg-blue text-white">
+        <footer class="container christmas-color text-white">
             <div>
                 <h3>With Love From Katherine</h3>
             </div>
